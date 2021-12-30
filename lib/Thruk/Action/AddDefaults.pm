@@ -111,11 +111,6 @@ sub begin {
     $theme = $c->config->{'default_theme'} unless defined $available_themes->{$theme};
     $c->stash->{'theme'} = $theme;
 
-    $c->stash->{all_in_one_css} = 0;
-    if($theme eq 'Thruk' || $theme eq 'Thruk2') {
-        $c->stash->{all_in_one_css} = 1;
-    }
-
     if(exists $c->req->parameters->{'noheader'}) {
         $c->req->parameters->{'hidetop'}  = 1;
     }

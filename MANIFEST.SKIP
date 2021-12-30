@@ -62,6 +62,7 @@ configure-stamp
 my_templates/
 panorama_default_view
 themes/themes-available/.*/images/logos/.*server.png
+themes/themes-available/Thruk3/node_modules/
 nytprof/
 nytprof.out
 .~ko-6.1.3-perllint~

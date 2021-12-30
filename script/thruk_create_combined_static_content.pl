@@ -49,6 +49,7 @@ if(-e 'root/thruk/cache/thruk-'.$fileversion.'.js') {
 }
 
 $newest = 0;
+# TODO: check
 for my $theme (@themes) {
     for my $file (@{$config->{'all_in_one_css_frames'}->{$theme}}) {
         my @s   = stat('themes/themes-available/'.$theme.'/stylesheets/'.$file);

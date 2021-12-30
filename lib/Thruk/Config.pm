@@ -76,7 +76,7 @@ my $base_defaults = {
     'group_paging_overview'                 => '*3, 10, 100, all',
     'group_paging_grid'                     => '*5, 10, 50, all',
     'group_paging_summary'                  => '*10, 50, 100, all',
-    'default_theme'                         => 'Thruk2',
+    'default_theme'                         => 'Thruk3',
     'datetime_format'                           => '%Y-%m-%d  %H:%M:%S',
     'datetime_format_long'                  => '%a %b %e %H:%M:%S %Z %Y',
     'datetime_format_today'                 => '%H:%M:%S',
@@ -249,28 +249,6 @@ my $base_defaults = {
                 'vendor/strftime-min-1.3.js',
                 'vendor/bestiejs-1.3.5/platform.js',
     ],
-    'all_in_one_css_frames'                 => {
-                'Thruk' => [
-                    'thruk_global.css',
-                    'Thruk.css',
-                ],
-                'Thruk2' => [
-                    'thruk_global.css',
-                    'Thruk2.css',
-                ],
-    },
-    'all_in_one_css_noframes'               => {
-                'Thruk' => [
-                    'thruk_global.css',
-                    'thruk_noframes.css',
-                    'Thruk.css',
-                ],
-                'Thruk2' => [
-                    'thruk_global.css',
-                    'thruk_noframes.css',
-                    'Thruk2.css',
-                ],
-    },
     'jquery_ui'                             => '1.12.1',
     'all_in_one_javascript_panorama'        => [
                 'vendor/jquery-3.5.1.min.js',
@@ -363,7 +341,6 @@ sub get_default_stash {
         'show_top_pane'             => 0,        # used in _header.tt on status pages
         'body_class'                => '',       # used in _conf_bare.tt on config pages
         'thruk_verbose'             => $ENV{'THRUK_VERBOSE'} // 0,
-        'all_in_one_css'            => 0,
         'hide_backends_chooser'     => 0,
         'show_sitepanel'            => 'off',
         'sites'                     => [],
